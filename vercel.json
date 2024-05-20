@@ -1,7 +1,20 @@
 {
+  "version": 2,
   "functions": {
-    "api/**": {
-      "excludeFiles": "{.next,*.cache,node_modules,public,app}/**"
+    "api/**/*.js": {
+      "memory": 1700,
+      "maxDuration": 10
+    },
+    "api/**/*.py": {
+      "runtime": "python3.9",
+      "memory": 1700,
+      "maxDuration": 10      
     }
-  }
+  },
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    }
+  ]
 }
