@@ -1,7 +1,7 @@
 {
 	"functions": {
 		"api/**/*": {
-			"excludeFiles": "__pycache__/*"
+			"excludeFiles": "chatbot_utils.py"
 		}
 	}
 }
