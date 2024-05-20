@@ -1,7 +1,9 @@
+
+
 {
-	"functions": {
-		"api/**/*": {
-			"excludeFiles": "**/*"
-		}
-	}
+  "functions": {
+    "api/**/*": {
+      "includeFiles": "api/index.py"
+    }
+  }
 }
